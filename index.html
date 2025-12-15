@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saklı Rota</title>
+    <link rel="icon" href="static/logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="login-screen">
+      <div class="login-box">
+        <h3>Saklı Rota</h3>
+        <div id="login-form">
+          <input type="text" id="login-user" placeholder="Kullanıcı Adı" />
+          <input type="password" id="login-pass" placeholder="Şifre" />
+          <button onclick="girisYap()">Giriş Yap</button>
+          <button onclick="formDegistir()" class="text-small">Kayıt Ol</button>
+        </div>
+        <div id="register-form" class="hidden">
+          <input type="text" id="reg-user" placeholder="Yeni Kullanıcı Adı" />
+          <input type="password" id="reg-pass" placeholder="Yeni Şifre" />
+          <button onclick="kayitOl()">Kayıt Ol</button>
+          <button onclick="formDegistir()" class="text-small">Giriş Yap</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="app-screen" class="hidden">
+      <div id="sidebar">
+        <div class="user-info-header text-small">
+          Hoşgeldin, <b id="display-username">-</b>
+          <a href="#" onclick="cikisYap()" class="logout-link">(Çıkış)</a>
+        </div>
+
+        <h4 class="section-title">📍 Yer Ekle / Düzenle</h4>
+
+        <form id="yerEkleForm" enctype="multipart/form-data">
+          <input
+            type="text"
+            id="baslik"
+            name="baslik"
+            placeholder="Başlık"
+            required
+          />
+          <textarea
+            id="aciklama"
+            name="aciklama"
+            placeholder="Açıklama (Opsiyonel)"
+          ></textarea>
+
+          <label class="text-small">Kategori:</label>
+          <select id="kategori" name="kategori_id">
+            <option value="1">Manzara & Seyir</option>
+            <option value="2">Lezzet Durakları</option>
+            <option value="3">Sessizlik & Huzur</option>
+            <option value="4">Fotoğraf & Kadraj</option>
+            <option value="5">Kamp & Doğa</option>
+            <option value="6">Tarih & Kültür</option>
+            <option value="7">Eğlence & Aktivite</option>
+          </select>
+
+          <label class="text-small label-block">Fotoğraf Yükle:</label>
+          <input
+            type="file"
+            id="gorselInput"
+            name="gorsel"
+            accept="image/*"
+            class="file-input"
+          />
+
+          <div class="coords-wrapper text-small">
+            Koordinat: <span id="coords">Haritadan seçin</span>
+            <input type="hidden" id="lat" name="lat" />
+            <input type="hidden" id="lon" name="lon" />
+          </div>
+
+          <button type="submit" id="kaydetBtn" class="btn-green">Kaydet</button>
+          <button
+            type="button"
+            id="iptalBtn"
+            onclick="formuSifirla()"
+            class="hidden btn-gray"
+          >
+            İptal
+          </button>
+        </form>
+
+        <hr />
+
+        <h4>Keşfet & Filtrele</h4>
+        <select id="filtre-kategori" onchange="haritaGetir()">
+          <option value="0">Tüm Kategoriler</option>
+          <option value="1">Manzara & Seyir</option>
+          <option value="2">Lezzet Durakları</option>
+          <option value="3">Sessizlik & Huzur</option>
+          <option value="4">Fotoğraf & Kadraj</option>
+          <option value="5">Kamp & Doğa</option>
+          <option value="6">Tarih & Kültür</option>
+          <option value="7">Eğlence & Aktivite</option>
+        </select>
+
+        <div class="filter-buttons">
+          <button onclick="haritaGetir(true)" class="btn-small">
+            Sadece Benimkiler
+          </button>
+          <button onclick="haritaGetir(false)" class="btn-small">
+            Herkesi Göster
+          </button>
+        </div>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

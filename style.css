@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+#map {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;  /* Katman sırası: En altta duracak */
+}
+#sidebar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border: 1px solid #ccc;
+  z-index: 999; /* Haritanın (z-index:1) üstünde durması için yüksek sayı */
+  overflow-y: auto;
+}
+#login-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("görsel.jpg") no-repeat center center/cover;
+  z-index: 10000; /* En üst katman */
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.login-box {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  border: 1px solid #999;
+  text-align: center;
+}
+input,textarea,select,button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer; /* Üzerine gelince el işareti çıksın */
+  background: #ddd;
+  border: 1px solid #999;
+}
+button:hover { /* Üzerine gelince koyulaşsın */
+  background: #ccc;
+}
+.hidden { /* Bir elementi sayfadan tamamen yok eder */
+  display: none !important;
+}
+.text-small {
+  font-size: 12px;
+  color: #666;
+}
+.popup-btn-group {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.popup-btn-group button {  /* Popup içindeki düzenle/sil butonları */
+  margin: 0;
+  padding: 5px;
+  font-size: 11px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.popup-img { /* Popup içindeki resim */
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.user-info-header {
+  margin-bottom: 10px;
+  text-align: right;
+}
+.logout-link {
+  color: red;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.section-title {
+  margin-top: 0;
+}
+.label-block {
+  margin-top: 10px;
+  display: block;
+}
+.file-input {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.coords-wrapper {  /*koordinat göstergesi */
+  margin: 10px 0;
+}
+#coords {
+  font-weight: bold;
+  color: #d35400;
+}
+.btn-green {  /* Kaydet Butonu  */
+  background: #4caf50;
+  color: white;
+  border: none;
+}
+.btn-green:hover {
+  background: #45a049;
+}
+.btn-gray {  /* İptal Butonu */
+  background: #7f8c8d;
+  color: white;
+  border: none;
+}
+.btn-gray:hover {
+  background: #6c7a7b;
+}
+.filter-buttons { /*filtreleme butonları*/
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.btn-small {
+  font-size: 12px;
+}
