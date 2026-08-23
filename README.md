@@ -7,11 +7,12 @@
 ## 📸 Proje Ekran Görüntüleri
 
 | Giriş & Kayıt Ekranı | 
-|:---:|:---:|
+
 <img width="1917" height="870" alt="Ana Sayfa" src="https://github.com/user-attachments/assets/d309f390-7ac1-432c-94be-6567924a66a0" /> 
 
+---
 |Harita & Keşfet Arayüzü |
-|:---:|:---:|
+
 <img width="1917" height="870" alt="Ana Sayfa" src="https://github.com/user-attachments/assets/d7a3bee4-5e35-4191-9eeb-f23a6c62f7c9" />
 
 <img width="1917" height="871" alt="Filtreleme" src="https://github.com/user-attachments/assets/2941085a-caf0-45e2-91f3-3522e78e1844" />
