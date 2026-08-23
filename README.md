@@ -52,7 +52,7 @@ Sakli_Rota/
 ├── index.html                # Arayüz ana HTML dosyası
 ├── script.js                 # Harita, form ve frontend API istekleri
 ├── style.css                 # Arayüz stil ve tasarım dosyası
-├── Giriş_Ekranı_2.jpg        # Proje ekran görüntüleri
+├── görsel.jpg                # Giriş ekranı arkaplan görseli
 ├── .gitignore                # Git takip dışı bırakılan dosyalar
 └── README.md                 # Proje dokümantasyonu ve kurulum rehberi
 ```
