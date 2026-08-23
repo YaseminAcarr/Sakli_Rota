@@ -8,7 +8,7 @@
 
 | Giriş & Kayıt Ekranı | 
 
-<img width="1917" height="870" alt="Ana Sayfa" src="https://github.com/user-attachments/assets/d309f390-7ac1-432c-94be-6567924a66a0" /> 
+<img width="1892" height="863" alt="Giriş_Ekranı" src="https://github.com/user-attachments/assets/6bb0ca62-407c-4090-988a-ff8fa8da2a17" />
 
 ---
 |Harita & Keşfet Arayüzü |
