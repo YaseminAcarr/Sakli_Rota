@@ -23,7 +23,7 @@
 ## ✨ Özellikler
 
 * **İnteraktif Harita:** Leaflet.js ve OpenStreetMap entegrasyonu ile harita üzerinden kolayca koordinat seçme ve mevcut noktaları görüntüleme.
-* **Kategorize Edilmiş Keşif:** Manzara, lezzet durakları, kamp & doğa, fotoğraf kadrajı ve tarih gibi farklı kategorilerde anlık filtreleme yapabilme.
+* **Kategorize Edilmiş Keşif:** Manzara, lezzet durakları, kamp doğa, fotoğraf kadrajı ve tarih gibi farklı kategorilerde anlık filtreleme yapabilme.
 * **Kullanıcı Yetkilendirme:** Güvenli oturum yönetimi (Flask Session tabanlı) ve kullanıcıya özel içerik kontrolü.
 * **CRUD İşlemleri:** Kullanıcıların kendi ekledikleri noktaları fotoğraflı bir şekilde eklemesi, güncellemesi ve silmesi.
 * **Kişiselleştirilmiş Görünüm:** "Sadece Benimkiler" veya "Herkesi Göster" seçenekleriyle dinamik harita katmanları.
