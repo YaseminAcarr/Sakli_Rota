@@ -23,15 +23,16 @@
 ```text
 Sakli_Rota/
 │
-├── static/                   # Statik dosyalar (Görseller, stiller, logolar)
+├── static/                   # Statik dosyalar
 │   ├── uploads/              # Kullanıcıların yüklediği mekan fotoğrafları
-│   ├── görsel.jpg            # Giriş ekranı arkaplan görseli
 │   └── logo.png              # Proje logosu ve favicon
 │
-├── app.py                    # Flask backend sunucusu ve API rotaları
+├── __pycache__/              # Python önbellek dosyaları (Git'e eklenmez / .gitignore'a eklenmelidir)
+├── görsel.jpg                # Giriş ekranı arkaplan görseli
 ├── index.html                # Arayüz ana HTML dosyası
-├── style.css                 # Arayüz stil ve tasarım dosyası
+├── lokasyon.py               # Flask backend sunucusu ve API rotaları
 ├── script.js                 # Harita, form ve frontend API istekleri
+├── style.css                 # Arayüz stil ve tasarım dosyası
 └── README.md                 # Proje dokümantasyonu ve kurulum rehberi
 ```
 ## 🚀 Kurulum ve Çalıştırma
