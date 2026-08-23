@@ -7,10 +7,10 @@
 ## ✨ Özellikler
 
 * **İnteraktif Harita:** Leaflet.js entegrasyonu ile harita üzerinden kolayca koordinat seçme ve mevcut noktaları görüntüleme.
-* **Kategorize Edilmiş Keşif:** Manzara, lezzet durakları, kamp & doğa ve tarih gibi farklı kategorilerde filtreleme yapabilme[cite: 2, 3].
-* **Kullanıcı Yetkilendirme:** Güvenli oturum yönetimi (Session tabanlı) ve kullanıcıya özel içerik yönetimi[cite: 2].
-* **CRUD İşlemleri:** Kullanıcıların kendi ekledikleri noktaları fotoğraflı bir şekilde eklemesi, güncellemesi ve silmesi[cite: 2, 3].
-* **Kişiselleştirilmiş Filtreleme:** "Sadece Benimkiler" veya "Herkesi Göster" seçenekleriyle dinamik harita katmanları[cite: 2, 3].
+* **Kategorize Edilmiş Keşif:** Manzara, lezzet durakları, kamp & doğa ve tarih gibi farklı kategorilerde filtreleme yapabilme.
+* **Kullanıcı Yetkilendirme:** Güvenli oturum yönetimi (Session tabanlı) ve kullanıcıya özel içerik yönetimi.
+* **CRUD İşlemleri:** Kullanıcıların kendi ekledikleri noktaları fotoğraflı bir şekilde eklemesi, güncellemesi ve silmesi.
+* **Kişiselleştirilmiş Filtreleme:** "Sadece Benimkiler" veya "Herkesi Göster" seçenekleriyle dinamik harita katmanları.
 
 ## 🛠️ Kullanılan Teknolojiler
 
